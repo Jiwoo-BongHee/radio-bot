@@ -1,0 +1,19 @@
+{
+  "name": "radiobot",
+  "version": "1.0.0",
+  "description": "Radio bot 24/7",
+  "main": "index.js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiwoo-BongHee/radio-bot.git"
+  },
+  "author": "Jiwoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiwoo-BongHee/radio-bot/issues"
+  },
+  "homepage": "https://github.com/Jiwoo-BongHee/radio-bot#readme"
+}
