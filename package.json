@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "Radio bot 24/7",
   "main": "index.js.js",
+  "dependencies": {
+    "bufferutil": "^3.0.2",
+    "discord.js": "^11.1.0",
+    "eris": "^0.7.0",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "libsodium-wrappers": "^0.5.2",
+    "node-opus": "^0.2.6",
+    "opusscript": "^0.0.3",
+    "save": "^2.3.1",
+    "uws": "^8.14.0",
+    "ytdl": "^0.6.0"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
