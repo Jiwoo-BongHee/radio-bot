@@ -13,21 +13,21 @@ client.on("ready", () => {
 client.on("message", (message) => {
 
 if (message.content === "?join"){
-var channel = message.guild.channels.find('name', "Radio");
+var channel = message.guild.channels.find('name', "Radio 24/7");
 var auteur = message.author.username;
 var guild = message.guild;
 
 	if (message.member.roles.find("name", "DJ")){
 		if (channel){
 		channel.join().then(connection => {
-        	const radio = "http://streaming.radionomy.com/Subarashii" 
+        	const radio = "https://www.twitch.tv/dheadz" 
         	connection.playStream(radio);
-      		console.log(new Date + auteur + " m'a connecté sur le channel \"Radio\" du serveur " + guild)
+      		console.log(new Date + auteur + " m'a connecté sur le channel \"Radio 24/7\" du serveur " + guild)
         	});
 		}
 
 	if (!channel) { 
-		message.channel.send("Le channel Radio n'existe pas, merci de le créer")
+		message.channel.send("Le channel \"Radio 24/7\"n'existe pas, merci de le créer")
     	};
     }
 
@@ -38,7 +38,7 @@ var guild = message.guild;
 
 
 if (message.content === "?stop"){
-var channel = message.guild.channels.find('name', "Radio");
+var channel = message.guild.channels.find('name', "Radio 24/7");
 var auteur = message.author.username;
 var guild = message.guild;
 	if (channel){
