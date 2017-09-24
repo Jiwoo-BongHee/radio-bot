@@ -1,5 +1,5 @@
-var Discord = require('discord.js'); //Requit : discord.js (installation : "npm install discord.js")
-var ffmpeg = require("ffmpeg"); //Requit :
+var Discord = require('discord.js');
+var ffmpeg = require("ffmpeg"); 
 var token = process.env.Discord_Token; 
 var client = new Discord.Client();
 
