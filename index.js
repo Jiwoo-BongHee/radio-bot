@@ -74,6 +74,18 @@ if (message.content === "?help"){
 		])
 }
 
+if (message.channel.type == 'dm'){
+	if (message.content == 'config'){
+		message.author.send([
+		"Commandes utilisables :",
+		"Pour pouvoir gérer le bot (faire les commandes `join` et `stop`), vous devez posséder un rôle `DJ` sans permissions particulières.",
+		"Le bot joindra automatiquement un channel intitulé `Radio 24/7`, s'il ne le trouve pas, le bot vous le signalera et vous dira de le créer.",
+		"Lors de l'utilisation de `?stop`, le bot quitte automatiquement le channel auquel il est connecté.",
+		"Si un problème se pose, merci de contacter `Atanabe Rio#0178` en MP !"
+		])
+	}
+}
+	
 });
 
 client.login(token);
