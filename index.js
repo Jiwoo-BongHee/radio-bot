@@ -65,19 +65,19 @@ if (message.content === "?help"){
 	message.channel.send("Regarde tes MP ! :smile:")
 	message.author.send([
 		"Commandes utilisables :",
-		"`?join` : Me fait rejoindre le channel \"Radio\"",
-		"`?stop` : Me fait quitter le channel \"Radio\" (DJ seuleument)",
+		"`?join` : Me fait rejoindre le channel `Radio 24/7` (DJ seuleument)",
+		"`?stop` : Me fait quitter le channel `Radio 24/7` (DJ seuleument)",
 		"`?help` : Envoie ce message",
 		"`?invite` : Envoie le lien pour m'ajouter à votre serveur",
 		"`?playlist`: Indique la playlist que je joue actuellement",
+		"`?config`: Indique comment faire fonctionner le bot (commande en Message Privé avec le bot uniquement)
 		"Pour la création d'un bot personnalisé, merci de contacter `Atanabe Rio#0178` en MP !"
 		])
 }
 
 if (message.channel.type == 'dm'){
-	if (message.content == 'config'){
+	if (message.content == '?config'){
 		message.author.send([
-		"Commandes utilisables :",
 		"Pour pouvoir gérer le bot (faire les commandes `join` et `stop`), vous devez posséder un rôle `DJ` sans permissions particulières.",
 		"Le bot joindra automatiquement un channel intitulé `Radio 24/7`, s'il ne le trouve pas, le bot vous le signalera et vous dira de le créer.",
 		"Lors de l'utilisation de `?stop`, le bot quitte automatiquement le channel auquel il est connecté.",
