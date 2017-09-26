@@ -6,7 +6,7 @@ client.on("ready", () => {
 	console.log("En cours de préparation...")
 	console.log("................................................")
 	console.log(new Date + "Je suis désormais connecté, merci de ne surtout pas fermer cette fenêtre")
-	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : http://streaming.radionomy.com/Subarashii")
+	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : https://www.twitch.tv/dheadz")
 });
 
 client.on("message", (message) => {
