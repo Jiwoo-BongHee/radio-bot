@@ -65,7 +65,8 @@ if (message.content === "?help"){
 		"`?stop` : Me fait quitter le channel \"Radio\" (DJ seuleument)",
 		"`?help` : Envoie ce message",
 		"`?invite` : Envoie le lien pour m'ajouter à votre serveur",
-		"Pour la création d'un bot personnalisé, merci de contacter `지우 - Jiwoo#0178` en MP !"
+		"`?playlist`: Indique la playlist que je joue actuellement",
+		"Pour la création d'un bot personnalisé, merci de contacter `Atanabe Rio` en MP !"
 		])
 }
 
