@@ -19,7 +19,7 @@ var guild = message.guild;
 	if (message.member.roles.find("name", "DJ")){
 		if (channel){
 		channel.join().then(connection => {
-        	const radio = "https://www.twitch.tv/dheadz" 
+        	const radio = "https://www.youtube.com/watch?v=YhBeXAPdeek" 
         	connection.playStream(radio);
       		console.log(new Date + auteur + " m'a connecté sur le channel \"Radio 24/7\" du serveur " + guild)
         	});
