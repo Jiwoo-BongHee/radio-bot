@@ -6,7 +6,7 @@ client.on("ready", () => {
 	console.log("En cours de préparation...")
 	console.log("................................................")
 	console.log(new Date + "Je suis désormais connecté, merci de ne surtout pas fermer cette fenêtre")
-	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : https://www.twitch.tv/dheadz")
+	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : http://streaming.radionomy.com/BlueAnimeIvana")
 });
 
 client.on("message", (message) => {
@@ -56,6 +56,10 @@ var guild = message.guild;
 if (message.content === "?invite"){
 	message.channel.send("Voici le lien pour m'ajouter à votre serveur : https://discordapp.com/oauth2/authorize?&client_id=342119944651276290&scope=bot&permissions=0x00000008")
 }
+	
+if (message.content === "?playlist"){
+	message.channel.send("Voici la playlist que je joue actuellement : http://streaming.radionomy.com/BlueAnimeIvana")
+}
 
 if (message.content === "?help"){
 	message.channel.send("Regarde tes MP ! :smile:")
@@ -66,7 +70,7 @@ if (message.content === "?help"){
 		"`?help` : Envoie ce message",
 		"`?invite` : Envoie le lien pour m'ajouter à votre serveur",
 		"`?playlist`: Indique la playlist que je joue actuellement",
-		"Pour la création d'un bot personnalisé, merci de contacter `Atanabe Rio` en MP !"
+		"Pour la création d'un bot personnalisé, merci de contacter `Atanabe Rio#0178` en MP !"
 		])
 }
 
