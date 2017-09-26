@@ -70,7 +70,7 @@ if (message.content === "?help"){
 		"`?help` : Envoie ce message",
 		"`?invite` : Envoie le lien pour m'ajouter à votre serveur",
 		"`?playlist`: Indique la playlist que je joue actuellement",
-		"`?config`: Indique comment faire fonctionner le bot (commande en Message Privé avec le bot uniquement)
+		"`?config`: Indique comment faire fonctionner le bot (commande en Message Privé avec le bot uniquement)",
 		"Pour la création d'un bot personnalisé, merci de contacter `Atanabe Rio#0178` en MP !"
 		])
 }
