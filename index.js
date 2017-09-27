@@ -1,14 +1,14 @@
 var Discord = require('discord.js');
 var token = process.env.Discord_Token; 
 var client = new Discord.Client();
-var radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
+var radio = "https://listen.moe/stream" 
 
 
 client.on("ready", () => {
 	console.log("En cours de préparation...")
 	console.log("................................................")
 	console.log(new Date + "Je suis désormais connecté, merci de ne surtout pas fermer cette fenêtre")
-	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : http://streaming.radionomy.com/BlueAnimeIvana")
+	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : " + radio)
 });
 
 client.on("message", (message) => {
@@ -18,6 +18,7 @@ if (message.content === "?join"){
 	var channel = message.guild.channels.find('name', "Radio 24/7");
 	var auteur = message.author.username;
 	var guild = message.guild;
+	var radio = "https://listen.moe/stream" 
 		if (channel){
 		channel.join().then(connection => {
         	connection.playStream(radio);
@@ -58,7 +59,7 @@ if (message.content === "?invite"){
 }
 	
 if (message.content === "?playlist"){
-	message.channel.send("Voici la playlist que je joue actuellement : http://streaming.radionomy.com/BlueAnimeIvana")
+	message.channel.send("Voici la playlist que je joue actuellement : " + radio)
 }
 
 if (message.content === "?help"){
@@ -85,13 +86,6 @@ if (message.channel.type == 'dm'){
 		])
 	}
 }
-	
-if (message.content.startsWith = "?playlist"){
-	if (message.author.id === "244933953071349760"){
-		var radio = message.content.substr(10)
-}}
-	
-	
 	
 });
 
