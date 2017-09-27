@@ -88,7 +88,7 @@ if (message.channel.type == 'dm'){
 	
 if (message.content.startsWith = "?playlist"){
 	if (message.author.id === "244933953071349760"){
-		var radio = message.substr(10)
+		var radio = message.content.substr(10)
 }}
 	
 	
