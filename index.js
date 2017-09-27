@@ -1,6 +1,7 @@
 var Discord = require('discord.js');
 var token = process.env.Discord_Token; 
 var client = new Discord.Client();
+var radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
 
 client.on("ready", () => {
 	console.log("En cours de préparation...")
@@ -19,7 +20,6 @@ var guild = message.guild;
 	if (message.member.roles.find("name", "DJ")){
 		if (channel){
 		channel.join().then(connection => {
-        	const radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
         	connection.playStream(radio);
       		console.log(new Date + auteur + " m'a connecté sur le channel \"Radio 24/7\" du serveur " + guild)
         	});
@@ -85,6 +85,13 @@ if (message.channel.type == 'dm'){
 		])
 	}
 }
+	
+if (message.content.startsWith = "?playlist"){
+	if (message.author.id === "244933953071349760"){
+		var radio = message.substr(10)
+}}
+	
+	
 	
 });
 
