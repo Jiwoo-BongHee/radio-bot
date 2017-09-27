@@ -3,6 +3,7 @@ var token = process.env.Discord_Token;
 var client = new Discord.Client();
 var radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
 var channel = message.guild.channels.find('name', "Radio 24/7");
+var channels = client.guild.channels.find('name', "Radio 24/7");
 var auteur = message.author.username;
 var guild = message.guild;
 
