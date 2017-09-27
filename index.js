@@ -13,7 +13,7 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
 
-if (message.content === "/join"){
+if (message.content === "?join"){
 	if (message.member.roles.find("name", "DJ")){
 	var channel = message.guild.channels.find('name', "Radio 24/7");
 	var auteur = message.author.username;
@@ -37,7 +37,7 @@ if (message.content === "/join"){
 }
 
 
-if (message.content === "/stop"){
+if (message.content === "?stop"){
 var channel = message.guild.channels.find('name', "Radio 24/7");
 var auteur = message.author.username;
 var guild = message.guild;
@@ -54,15 +54,15 @@ var guild = message.guild;
 	}
 };
 
-if (message.content === "/invite"){
+if (message.content === "?invite"){
 	message.channel.send("Voici le lien pour m'ajouter à votre serveur : https://discordapp.com/oauth2/authorize?&client_id=342119944651276290&scope=bot&permissions=0x00000008")
 }
 	
-if (message.content === "/playlist"){
+if (message.content === "?playlist"){
 	message.channel.send("Voici la playlist que je joue actuellement : " + radio)
 }
 
-if (message.content === "/help"){
+if (message.content === "?help"){
 	message.channel.send("Regarde tes MP ! :smile:")
 	message.author.send([
 		"Commandes utilisables :",
