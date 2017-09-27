@@ -9,7 +9,7 @@ client.on("ready", () => {
 	console.log("En cours de préparation...")
 	console.log("................................................")
 	console.log(new Date + "Je suis désormais connecté, merci de ne surtout pas fermer cette fenêtre")
-	channel.join().then(connection => {
+	channels.join().then(connection => {
         	connection.playStream(radio);
       		console.log(new Date + " : Je me suis connecté sur le channel \"Radio 24/7\" du serveur " + guild)
         	});
