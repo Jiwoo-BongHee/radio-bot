@@ -2,10 +2,8 @@ var Discord = require('discord.js');
 var token = process.env.Discord_Token; 
 var client = new Discord.Client();
 var radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
-var channel = message.guild.channels.find('name', "Radio 24/7");
 var channels = client.guild.channels.find('name', "Radio 24/7");
-var auteur = message.author.username;
-var guild = message.guild;
+
 
 client.on("ready", () => {
 	console.log("En cours de préparation...")
@@ -22,6 +20,9 @@ client.on("message", (message) => {
 
 if (message.content === "?join"){
 	if (message.member.roles.find("name", "DJ")){
+	var channel = message.guild.channels.find('name', "Radio 24/7");
+	var auteur = message.author.username;
+	var guild = message.guild;
 		if (channel){
 		channel.join().then(connection => {
         	connection.playStream(radio);
