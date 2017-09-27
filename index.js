@@ -2,17 +2,12 @@ var Discord = require('discord.js');
 var token = process.env.Discord_Token; 
 var client = new Discord.Client();
 var radio = "http://streaming.radionomy.com/BlueAnimeIvana" 
-var channels = client.guild.channels.find('name', "Radio 24/7");
 
 
 client.on("ready", () => {
 	console.log("En cours de préparation...")
 	console.log("................................................")
 	console.log(new Date + "Je suis désormais connecté, merci de ne surtout pas fermer cette fenêtre")
-	channels.join().then(connection => {
-        	connection.playStream(radio);
-      		console.log(new Date + " : Je me suis connecté sur le channel \"Radio 24/7\" du serveur " + guild)
-        	});
 	client.user.setGame("?help pour voir la liste des commandes | Joue actuellement : http://streaming.radionomy.com/BlueAnimeIvana")
 });
 
