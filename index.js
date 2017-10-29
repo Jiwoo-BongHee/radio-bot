@@ -12,6 +12,43 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
+	
+var voiceCO = client.user.voiceStatuts
+var str
+
+switch(voiceCO){
+    case 0:
+        str = "CONNECTED"
+        break;
+
+    case 1:
+        str = "CONNECTING"
+        break;
+    
+    case 2:
+        str = "AUTHENTICATING"
+        break;
+
+    case 3:
+        str = "RECONNECTING"
+        break;
+
+    case 4:
+        str = "DISCONNECTED"
+        break;
+    
+    default:
+        str = "gnagna"
+        break
+}
+
+if(str != "CONNECTED"){
+    var channel = message.guild.channels.find('name', "KawaiiSongs")
+    channel.join().then(connection => {
+        const radio = "https://listen.moe/stream" 
+        connection.playStream(radio);
+    })
+}
 
 if (message.content === "?join"){
 	if (message.member.roles.find("name", "DJ")){
